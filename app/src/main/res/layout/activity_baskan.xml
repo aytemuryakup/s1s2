@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    tools:context=".baskan">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/baskan"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="160dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/menuback"
+            android:text="Osman Güder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/menuback"
+            android:text="Malatya Battalgazi Belediye Başkanı" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/menuback"
+        android:layout_marginBottom="-1dp">
+
+
+
+        <Button
+            android:id="@+id/mesaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menuback"
+            android:layout_marginLeft="15dp"
+            android:text="Başkandan mesaj"
+            android:textColor="@android:color/white" />
+
+
+
+
+
+        <Button
+            android:id="@+id/ozgecmis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menuback"
+            android:layout_marginRight="15dp"
+            android:text="Başkanın Özgeçmişi"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_icerik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/icerik"
+                    android:scrollbars="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"/>
+
+
+
+
+            </ScrollView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

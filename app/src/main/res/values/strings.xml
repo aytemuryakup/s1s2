@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lastmenu</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+    <string name="title_activity_eczana_location">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_eczane_maps">Map</string>
+</resources>

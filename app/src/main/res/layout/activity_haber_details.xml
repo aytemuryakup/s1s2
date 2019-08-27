@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/backrepeat"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/haber_foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="img"
+                    tools:ignore="UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/shadow_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="@id/haber_foto"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/bottom_shadow" />
+
+
+                <FrameLayout
+                    android:id="@+id/layoutDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/haber_foto"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_white"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_date" />
+
+                    <TextView
+                        android:id="@+id/haber_tarih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginRight="10dp"
+                        android:text="01 January 2019"
+                        android:textColor="#606060" />
+
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:id="@+id/haber_baslik"
+                    android:textColor="@color/colorTextTitle"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_below="@id/haber_foto"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Title of News"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/haber_aciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/haber_baslik"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="15dp"
+                    android:text="aciklama" />
+
+
+                <!--bu bölüme slider view gelecek-->
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hata"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/haber_aciklama">
+
+                </ViewFlipper>
+            </RelativeLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
